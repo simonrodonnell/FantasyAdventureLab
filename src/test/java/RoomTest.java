@@ -48,5 +48,16 @@ public class RoomTest {
         assertEquals(2, room.getEnemies().size());
     }
 
+    @Test
+    public void roomIsComplete(){
+        room.removeEnemy(enemy1);
+        room.removeEnemy(enemy2);
+        room.removeEnemy(enemy3);
+        room.takeTreasure();
+        room.takeTreasure();
+        room.takeTreasure();
+        assertEquals(true, room.IsRoomComplete());
+    }
+
 
 }

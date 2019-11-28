@@ -8,12 +8,10 @@ public class Room {
 
     private ArrayList<Enemy> enemies;
     private ArrayList<TreasureTypes> treasure;
-    private Boolean roomIsComplete;
 
     public Room(ArrayList<Enemy> enemies, ArrayList<TreasureTypes> treasure){
         this.enemies = enemies;
         this.treasure = treasure;
-        this.roomIsComplete = false;
     }
 
     public ArrayList<Enemy> getEnemies() {
@@ -23,11 +21,6 @@ public class Room {
     public ArrayList<TreasureTypes> getTreasure() {
         return treasure;
     }
-
-    public Boolean getRoomIsComplete() {
-        return roomIsComplete;
-    }
-
 
     public TreasureTypes takeTreasure(){
         TreasureTypes foundTreasure = treasure.get(0);
@@ -39,5 +32,9 @@ public class Room {
         int index = enemies.indexOf(enemy);
         enemies.remove(index);
 
+    }
+
+    public boolean IsRoomComplete() {
+        return (enemies.isEmpty() && treasure.isEmpty());
     }
 }

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83489b66-19cb-45bf-95b8-62144afbf1a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Cleric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoomTest.canRemoveEnemy">
+  <component name="RunManager" selected="JUnit.RoomTest.roomIsComplete">
     <configuration name="ClericTest.canHeal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventureLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,22 +99,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WarriorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomTest.roomIsComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventureLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WarriorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="RoomTest" />
+      <option name="METHOD_NAME" value="roomIsComplete" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoomTest.roomIsComplete" />
         <item itemvalue="JUnit.RoomTest.canRemoveEnemy" />
         <item itemvalue="JUnit.RoomTest.canTakeTreasure" />
         <item itemvalue="JUnit.ClericTest.canHeal" />
         <item itemvalue="JUnit.MagicUserTest" />
-        <item itemvalue="JUnit.WarriorTest" />
       </list>
     </recent_temporary>
   </component>
