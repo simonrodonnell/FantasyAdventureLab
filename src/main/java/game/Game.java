@@ -1,6 +1,5 @@
 package game;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import game.players.Player;
 import game.rooms.Room;
 

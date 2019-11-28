@@ -24,7 +24,7 @@ public class MagicUserTest {
     public void canAttack(){
         String result = magicUser.attack(enemy);
         assertEquals("You killed the enemy!", result);
-        assertEquals(-15, enemy.getHitPoints() );
+        assertEquals(-10, enemy.getHitPoints() );
     }
 
 }
