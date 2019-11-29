@@ -2,6 +2,7 @@ package game;
 
 import game.players.Player;
 import game.rooms.Room;
+import game.rooms.TreasureTypes;
 import game.rooms.enemies.Monster;
 import game.rooms.enemies.MonsterTypes;
 
@@ -38,13 +39,27 @@ public class Game {
 
     public Monster randomMonster() {
         MonsterTypes[] monsterArray = MonsterTypes.values();
-        Random dice = new Random();
-        int index = dice.nextInt(monsterArray.length) + 1;
+        Random random = new Random();
+        int index = random.nextInt(monsterArray.length);
         MonsterTypes randomMonsterType = monsterArray[index];
         return new Monster(randomMonsterType);
+    }
+
+
+    private TreasureTypes randomTreasure() {
+        TreasureTypes[] treasureArray = TreasureTypes.values();
+        Random random = new Random();
+        int index = random.nextInt(treasureArray.length);
+        return treasureArray[index];
+
     }
 
     public void addMonsterToRoom(Room room) {
         room.addMonster(randomMonster());
     }
+
+    public void addTreasureToRoom(Room room) {
+        room.addTreasure(randomTreasure());
+    }
+
 }

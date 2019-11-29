@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83489b66-19cb-45bf-95b8-62144afbf1a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MonsterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FantasyAdventureLab.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/behaviours/IAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/behaviours/IAttack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Cleric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/MagicUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/MagicUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Warrior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/EnemyTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/MonsterTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MagicUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MagicUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WarriorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WarriorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FantasyAdventureLab.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/game/rooms/enemies/EnemyTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/rooms/enemies/EnemyTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/FantasyAdventureLab.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +57,7 @@
       <recent name="game.rooms.enemies" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in FantasyAdventureHW">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration name="All in FantasyAdventureHW" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventureHW" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,6 +70,15 @@
       <module name="FantasyAdventureLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyAdventureHW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,23 +101,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoomTest.roomIsComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyAdventureLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoomTest" />
-      <option name="METHOD_NAME" value="roomIsComplete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.All in FantasyAdventureHW" />
         <item itemvalue="JUnit.MonsterTest" />
         <item itemvalue="JUnit.RoomTest" />
         <item itemvalue="JUnit.All in FantasyAdventureLab" />
-        <item itemvalue="JUnit.RoomTest.roomIsComplete" />
       </list>
     </recent_temporary>
   </component>
@@ -189,22 +173,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="382" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1575027005592" />
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575026168977">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575027645638">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575026168977" />
-    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575026168976">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575027645638" />
+    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575027645635">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575026168976" />
-    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575026168975">
+    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575027645635" />
+    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575027645634">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575026168975" />
-    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575026168976">
+    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575027645634" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575027645636">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575026168976" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575027645636" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1575022923135">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

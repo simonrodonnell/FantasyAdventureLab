@@ -52,8 +52,25 @@ public class GameTest {
     }
 
     @Test
+    public void getDifficulty() {
+        assertEquals(1, game.getDifficulty());
+    }
+
+    @Test
+    public void setDifficulty() {
+        game.setDifficulty(3);
+        assertEquals(3, game.getDifficulty());
+    }
+
+    @Test
     public void addMonsters() {
         game.addMonsterToRoom(room);
         assertEquals(4, room.getMonsters().size());
+    }
+
+    @Test
+    public void addTreasure() {
+        game.addTreasureToRoom(room);
+        assertEquals(4, room.getTreasure().size());
     }
 }

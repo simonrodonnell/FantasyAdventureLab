@@ -40,4 +40,8 @@ public class Room {
     public void addMonster(Monster newMonster) {
         monsters.add(newMonster);
     }
+
+    public void addTreasure(TreasureTypes newTreasure) {
+        treasure.add(newTreasure);
+    }
 }
