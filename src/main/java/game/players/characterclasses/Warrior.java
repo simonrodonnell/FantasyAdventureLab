@@ -4,7 +4,7 @@ import game.behaviours.Dice;
 import game.behaviours.IAttack;
 import game.players.characterclasses.types.WeaponTypes;
 import game.players.characterclasses.types.WarriorTypes;
-import game.rooms.enemies.Enemy;
+import game.rooms.enemies.Monster;
 
 public class Warrior extends CharacterClass implements IAttack {
 
@@ -28,12 +28,12 @@ public class Warrior extends CharacterClass implements IAttack {
         this.weapon = newWeapon;
     }
 
-    public String attack(Enemy enemy){
+    public String attack(Monster monster){
         Dice dice = new Dice();
         int playerAttacks = dice.rollDice();
         int enemyDefends = dice.rollDice();
         if(playerAttacks > enemyDefends){
-            return enemy.takeDamage(weapon.getDamage());
+            return monster.takeDamage(weapon.getDamage());
         } else {
             return "You missed!";
         }

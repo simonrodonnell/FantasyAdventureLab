@@ -1,17 +1,22 @@
 package game.rooms.enemies;
 
-public class Enemy {
+public class Monster {
 
-    private EnemyTypes type;
+    private MonsterTypes type;
     private int hitPoints;
 
-    public Enemy(EnemyTypes type){
+    public Monster(MonsterTypes type){
         this.type = type;
         this.hitPoints = type.getHitPoints();
     }
 
-    public EnemyTypes getType() {
+    public MonsterTypes getType() {
         return type;
+    }
+
+    public void setType(MonsterTypes type) {
+        this.type = type;
+        this.hitPoints = type.getHitPoints();
     }
 
     public int getHitPoints() {

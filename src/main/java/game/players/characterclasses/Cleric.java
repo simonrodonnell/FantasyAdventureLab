@@ -5,7 +5,7 @@ import game.behaviours.IAttack;
 import game.players.Player;
 import game.players.characterclasses.types.HealingTool;
 import game.players.characterclasses.types.WeaponTypes;
-import game.rooms.enemies.Enemy;
+import game.rooms.enemies.Monster;
 
 public class Cleric extends CharacterClass implements IAttack {
 
@@ -27,12 +27,12 @@ public class Cleric extends CharacterClass implements IAttack {
     }
 
 
-    public String attack(Enemy enemy){
+    public String attack(Monster monster){
         Dice dice = new Dice();
         int playerAttacks = dice.rollDice();
         int enemyDefends = dice.rollDice();
         if(playerAttacks > enemyDefends){
-            return enemy.takeDamage(weapon.getDamage());
+            return monster.takeDamage(weapon.getDamage());
         } else {
             return "You missed!";
         }

@@ -5,7 +5,7 @@ import game.behaviours.IAttack;
 import game.players.characterclasses.types.SpellType;
 import game.players.characterclasses.types.Creature;
 import game.players.characterclasses.types.MagicUserType;
-import game.rooms.enemies.Enemy;
+import game.rooms.enemies.Monster;
 
 public class MagicUser extends CharacterClass implements IAttack {
 
@@ -40,14 +40,14 @@ public class MagicUser extends CharacterClass implements IAttack {
         this.creature = creature;
     }
 
-    public String attack(Enemy enemy){
+    public String attack(Monster monster){
         Dice dice = new Dice();
         int playerAttacks = 10; // for testing
 //        int playerAttacks = dice.rollDice();
         int enemyDefends = 5; // for testing
 //        int enemyDefends = dice.rollDice();
         if(playerAttacks > enemyDefends){
-            return enemy.takeDamage(spell.getDamage());
+            return monster.takeDamage(spell.getDamage());
         } else {
             return "You killed the enemy!";
         }

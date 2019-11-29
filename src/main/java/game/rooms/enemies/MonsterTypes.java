@@ -1,6 +1,6 @@
 package game.rooms.enemies;
 
-public enum EnemyTypes {
+public enum MonsterTypes {
 
     DRAGON(25),
     TROLL(15),
@@ -10,7 +10,7 @@ public enum EnemyTypes {
 
     private int hitPoints;
 
-    EnemyTypes(int hitPoints){
+    MonsterTypes(int hitPoints){
         this.hitPoints = hitPoints;
     }
 
