@@ -54,6 +54,11 @@ public class GameTest {
     }
 
     @Test
+    public void getNumberOfPlayers() {
+        assertEquals(1, game.getNumberOfPlayers());
+    }
+
+    @Test
     public void setDifficulty() {
         game.setDifficulty(3);
         assertEquals(3, game.getDifficulty());

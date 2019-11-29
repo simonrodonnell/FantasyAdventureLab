@@ -17,6 +17,10 @@ public class Cleric extends CharacterClass implements IAttack {
         this.weapon = WeaponTypes.STAFF;
     }
 
+    public HealingTool getHealingTool() {
+        return healingTool;
+    }
+
     public void setHealingTool(HealingTool healingTool) {
         this.healingTool = healingTool;
     }

@@ -120,4 +120,15 @@ public class Game {
         generateRooms();
     }
 
+    public void quest(){
+        int roomIndex = 0;
+        while(roomIndex < getRooms().size()){
+            Room room = rooms.get(roomIndex);
+            // fight monsters
+                room.getMonsters().clear();
+            // get treasure
+            roomIndex ++;
+        }
+    }
+
 }

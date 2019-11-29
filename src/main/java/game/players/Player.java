@@ -7,14 +7,17 @@ public class Player {
     private String name;
     private int hitPoints;
     private int gold;
+    private int experience;
     private CharacterClass characterClass;
-    private int maxHitPoints = 20;
+    private int maxHitPoints;
 
     public Player(String name, CharacterClass characterClass){
         this.name = name;
         this.characterClass = characterClass;
+        this.maxHitPoints = 20;
         this.hitPoints = maxHitPoints;
         this.gold = 0;
+        this.experience = 0;
     }
 
     public String getName() {

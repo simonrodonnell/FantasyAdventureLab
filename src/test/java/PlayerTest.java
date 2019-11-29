@@ -25,6 +25,11 @@ public class PlayerTest {
     }
 
     @Test
+    public void playerHasCharacterClass(){
+        assertEquals(characterClass, player.getCharacterClass());
+    }
+
+    @Test
     public void playHasHitPoints() {
         assertEquals(20, player.getHitPoints());
     }
