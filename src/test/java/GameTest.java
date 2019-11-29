@@ -73,4 +73,15 @@ public class GameTest {
         game.addTreasureToRoom(room);
         assertEquals(4, room.getTreasure().size());
     }
+
+    @Test
+    public void difficultyChangesContentsOfRoom() {
+        game.setDifficulty(3);
+        game.addMonsterToRoom(room);
+        game.addTreasureToRoom(room);
+        assertEquals(6, room.getMonsters().size());
+        System.out.println(room.getMonsters());
+        assertEquals(6, room.getTreasure().size());
+        System.out.println(room.getTreasure());
+    }
 }

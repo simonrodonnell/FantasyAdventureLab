@@ -55,11 +55,21 @@ public class Game {
     }
 
     public void addMonsterToRoom(Room room) {
+        int loopCount = 0;
+        while(loopCount < difficulty)
+        {
         room.addMonster(randomMonster());
+        loopCount ++;
+        }
     }
 
     public void addTreasureToRoom(Room room) {
+        int loopCount = 0;
+        while(loopCount < difficulty)
+        {
         room.addTreasure(randomTreasure());
+            loopCount ++;
+        }
     }
 
 }
