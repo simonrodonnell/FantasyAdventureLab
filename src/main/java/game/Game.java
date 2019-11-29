@@ -48,17 +48,11 @@ public class Game {
         this.difficulty = difficulty;
     }
 
-    // GAME SETUP
-
-    private void generateRooms() {
-        int loopCount = 0;
-        while(loopCount < difficulty)
-        {
-            Room room = new Room();
-            rooms.add(room);
-            loopCount ++;
-        }
+    public void setNumberOfPlayers(int numberOfPlayers) {
+        this.numberOfPlayers = numberOfPlayers;
     }
+
+    // GAME SETUP
 
     public Monster randomMonster() {
         MonsterTypes[] monsterArray = MonsterTypes.values();
@@ -78,7 +72,8 @@ public class Game {
 
     public void addMonsterToRoom(Room room) {
         int loopCount = 0;
-        while(loopCount < difficulty)
+        int combinedDifficulty = difficulty * numberOfPlayers;
+        while(loopCount < combinedDifficulty)
         {
         room.addMonster(randomMonster());
         loopCount ++;
@@ -87,16 +82,32 @@ public class Game {
 
     public void addTreasureToRoom(Room room) {
         int loopCount = 0;
-        while(loopCount < difficulty)
+        int combinedDifficulty = difficulty * numberOfPlayers;
+        while(loopCount < combinedDifficulty)
         {
         room.addTreasure(randomTreasure());
             loopCount ++;
         }
     }
 
+    public void generateRooms() {
+        int loopCount = 0;
+        int combinedDifficulty = difficulty * numberOfPlayers;
+        while(loopCount < combinedDifficulty)
+        {
+            Room room = new Room();
+            rooms.add(room);
+            loopCount ++;
+        }
+        for(Room room : rooms){
+        addMonsterToRoom(room);
+        addTreasureToRoom(room);
+        }
+    }
+
     public void setupGame(){
     Scanner inputScanner = new Scanner(System.in);
-
+        System.out.println("Welcome to CodeClan Fantasy Adventure");
         System.out.println("Number of players?");
         String inputNumberOfPlayers = inputScanner.next();
         System.out.println("You have entered "+ inputNumberOfPlayers +" players.");

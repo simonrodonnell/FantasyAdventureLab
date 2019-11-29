@@ -77,8 +77,16 @@ public class GameTest {
         game.addMonsterToRoom(room);
         game.addTreasureToRoom(room);
         assertEquals(6, room.getMonsters().size());
-        System.out.println(room.getMonsters().get(0).getType().getName());
         assertEquals(6, room.getTreasure().size());
-        System.out.println(room.getTreasure());
+    }
+
+    @Test
+    public void canGenerateRoomsBasedOnPlayersAndDifficulty(){
+        game.setDifficulty(3);
+        game.setNumberOfPlayers(2);
+        game.generateRooms();
+        assertEquals(6, game.getRooms().size());
+        assertEquals(6, game.getRooms().get(0).getMonsters().size());
+        assertEquals(6, game.getRooms().get(0).getTreasure().size());
     }
 }
