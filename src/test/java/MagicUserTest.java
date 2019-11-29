@@ -20,11 +20,14 @@ public class MagicUserTest {
         monster = new Monster(MonsterTypes.GOBLIN);
     }
 
+    // N.B. GOBLIN HAS 3 HP
+    // N.B. FIREBALL DOES 15 DAMAGE
+
     @Test
     public void canAttack(){
         String result = magicUser.attack(monster);
-        assertEquals("You killed the enemy!", result);
-        assertEquals(-10, monster.getHitPoints() );
+        assertEquals("You killed the Goblin!", result);
+        assertEquals(-12, monster.getHitPoints() );
     }
 
 }

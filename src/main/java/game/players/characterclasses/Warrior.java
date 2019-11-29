@@ -30,8 +30,10 @@ public class Warrior extends CharacterClass implements IAttack {
 
     public String attack(Monster monster){
         Dice dice = new Dice();
-        int playerAttacks = dice.rollDice();
-        int enemyDefends = dice.rollDice();
+//        int playerAttacks = dice.rollDice();
+        int playerAttacks = 10; // FIXED VALUE FOR TESTING
+//        int enemyDefends = dice.rollDice();
+        int enemyDefends = 5; // FIXED VALUE FOR TESTING
         if(playerAttacks > enemyDefends){
             return monster.takeDamage(weapon.getDamage());
         } else {

@@ -24,16 +24,15 @@ public class RoomTest {
         monster1 = new Monster(MonsterTypes.GOBLIN);
         monster2 = new Monster(MonsterTypes.ORC);
         monster3 = new Monster(MonsterTypes.SKELETON);
-        ArrayList<Monster> enemies = new ArrayList<Monster>();
-        ArrayList<TreasureTypes> treasures = new ArrayList<TreasureTypes>();
-        enemies.add(monster1);
-        enemies.add(monster2);
-        enemies.add(monster3);
-        treasures.add(treasure1);
-        treasures.add(treasure2);
-        treasures.add(treasure3);
 
-        this.room = new Room(enemies, treasures);
+        this.room = new Room();
+
+        room.addMonster(monster1);
+        room.addMonster(monster2);
+        room.addMonster(monster3);
+        room.addTreasure(treasure1);
+        room.addTreasure(treasure2);
+        room.addTreasure(treasure3);
     }
 
     @Test

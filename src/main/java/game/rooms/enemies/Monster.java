@@ -26,9 +26,9 @@ public class Monster {
     public String takeDamage(int damage) {
         hitPoints -= damage;
         if(hitPoints <= 0){
-            return "You killed the enemy!";
+            return "You killed the "+ type.getName() +"!";
         } else {
-            return "You hit the enemy!";
+            return "You hit the "+ type.getName() +"!";
         }
     }
 }

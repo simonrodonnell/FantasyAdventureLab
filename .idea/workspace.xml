@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83489b66-19cb-45bf-95b8-62144afbf1a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/FantasyAdventureRunner.java" afterDir="false" />
+    <list default="true" id="83489b66-19cb-45bf-95b8-62144afbf1a2" name="Default Changelist" comment="Added more monster types">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/TreasureTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/TreasureTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/MonsterTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/enemies/MonsterTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MagicUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MagicUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WarriorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WarriorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/players/characterclasses/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/players/characterclasses/Warrior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MagicUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MagicUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WarriorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WarriorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +66,7 @@
       <recent name="game.rooms.enemies" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
+  <component name="RunManager" selected="JUnit.All in FantasyAdventureHW">
     <configuration name="All in FantasyAdventureHW" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventureHW" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,10 +112,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in FantasyAdventureHW" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.GameTest.difficultyChangesContentsOfRoom" />
         <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.All in FantasyAdventureHW" />
         <item itemvalue="JUnit.MonsterTest" />
       </list>
     </recent_temporary>
@@ -151,6 +160,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added more monster types" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more monster types" />
   </component>
   <component name="WindowStateProjectService">
     <state x="221" y="2" key="#All_in_FantasyAdventureLab" timestamp="1575023243284">
@@ -161,14 +172,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="64" key="#Project_Structure/0.0.1280.800@0.0.1280.800" timestamp="1575023042642" />
+    <state x="100" y="100" width="1117" height="630" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575049814597">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="100" width="1117" height="630" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.800@0.0.1280.800" timestamp="1575049814597" />
     <state x="374" y="199" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575041724514">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="374" y="199" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1575041724514" />
-    <state x="453" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1575025619846">
+    <state x="453" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1575046121948">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="453" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1575025619846" />
+    <state x="453" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1575046121948" />
     <state x="328" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575022876216">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -177,26 +192,38 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="382" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1575027005592" />
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575041868577">
+    <state x="107" y="0" key="CommitChangelistDialog2" timestamp="1575046088200">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575041868577" />
-    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575041868575">
+    <state x="107" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1575046088200" />
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575050020988">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575041868575" />
-    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575041868574">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575050020988" />
+    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575050020987">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575041868574" />
-    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575041868576">
+    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575050020987" />
+    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575050020986">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575041868576" />
+    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575050020986" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575050020988">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575050020988" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1575022923135">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1575022923135" />
+    <state x="428" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575046041630">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="428" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1575046041630" />
+    <state x="402" y="11" key="refactoring.ChangeSignatureDialog" timestamp="1575046151883">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="402" y="11" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1575046151883" />
     <state x="305" y="124" key="search.everywhere.popup" timestamp="1575024370874">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

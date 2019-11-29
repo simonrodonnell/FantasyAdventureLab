@@ -26,9 +26,6 @@ public class GameTest {
 
         game = new Game();
 
-        ArrayList<Monster> monsters = new ArrayList<Monster>();
-        ArrayList<TreasureTypes> treasures = new ArrayList<TreasureTypes>();
-
         TreasureTypes treasure1 = TreasureTypes.GOLD;
         TreasureTypes treasure2 = TreasureTypes.GEMS;
         TreasureTypes treasure3 = TreasureTypes.ARTIFACTS;
@@ -37,14 +34,14 @@ public class GameTest {
         Monster monster2 = new Monster(MonsterTypes.ORC);
         Monster monster3 = new Monster(MonsterTypes.SKELETON);
 
-        monsters.add(monster1);
-        monsters.add(monster2);
-        monsters.add(monster3);
-        treasures.add(treasure1);
-        treasures.add(treasure2);
-        treasures.add(treasure3);
+        room = new Room();
 
-        room = new Room(monsters, treasures);
+        room.addMonster(monster1);
+        room.addMonster(monster2);
+        room.addMonster(monster3);
+        room.addTreasure(treasure1);
+        room.addTreasure(treasure2);
+        room.addTreasure(treasure3);
 
         CharacterClass characterClass = new Warrior(WarriorTypes.KNIGHT, WeaponTypes.BOW);
         player = new Player("Eric", characterClass);
@@ -80,7 +77,7 @@ public class GameTest {
         game.addMonsterToRoom(room);
         game.addTreasureToRoom(room);
         assertEquals(6, room.getMonsters().size());
-        System.out.println(room.getMonsters());
+        System.out.println(room.getMonsters().get(0).getType().getName());
         assertEquals(6, room.getTreasure().size());
         System.out.println(room.getTreasure());
     }
