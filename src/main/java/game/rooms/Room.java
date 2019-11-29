@@ -9,9 +9,9 @@ public class Room {
     private ArrayList<Monster> monsters;
     private ArrayList<TreasureTypes> treasure;
 
-    public Room(ArrayList<Monster> monsters, ArrayList<TreasureTypes> treasure){
-        this.monsters = monsters;
-        this.treasure = treasure;
+    public Room(){
+        this.monsters = new ArrayList<Monster>();
+        this.treasure = new ArrayList<TreasureTypes>();
     }
 
     public ArrayList<Monster> getMonsters() {
