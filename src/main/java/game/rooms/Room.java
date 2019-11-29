@@ -44,4 +44,12 @@ public class Room {
     public void addTreasure(TreasureTypes newTreasure) {
         treasure.add(newTreasure);
     }
+
+    public void killAllMonsters() {
+        this.monsters.clear();
+    }
+
+    public void removeAllTreasure() {
+        this.treasure.clear();
+    }
 }

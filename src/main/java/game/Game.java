@@ -124,10 +124,29 @@ public class Game {
         int roomIndex = 0;
         while(roomIndex < getRooms().size()){
             Room room = rooms.get(roomIndex);
-            // fight monsters
-                room.getMonsters().clear();
-            // get treasure
+            // fight monsters & get treasure
+            room.killAllMonsters(); //for test
+            room.removeAllTreasure(); //for test
             roomIndex ++;
+        }
+        System.out.println("Well done, you have completed the quest!");
+    }
+
+    public void fightAllMonsters(Room room){
+        int fightIndex = 0;
+        while(fightIndex < room.getMonsters().size()){
+            Monster monster = room.getMonsters().get(fightIndex);
+            fight(players, monster);
+            fightIndex ++;
+        }
+    }
+
+    private void fight(ArrayList<Player> players, Monster monster) {
+        int playerIndex = 0;
+        while(playerIndex < players.size()){
+            Player player = players.get(playerIndex);
+            player.getCharacterClass();
+            playerIndex ++;
         }
     }
 

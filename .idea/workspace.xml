@@ -5,13 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/Cleric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ClericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/game/players/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/players/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,7 @@
       <recent name="game.rooms.enemies" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in FantasyAdventureHW">
+  <component name="RunManager" selected="JUnit.PlayerTest.playerCanAttack">
     <configuration name="All in FantasyAdventureHW" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventureHW" />
       <option name="PACKAGE_NAME" value="" />
@@ -82,11 +79,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.difficultyChangesContentsOfRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.canQuest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventureHW" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="difficultyChangesContentsOfRoom" />
+      <option name="METHOD_NAME" value="canQuest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.playerCanAttack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyAdventureHW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" value="playerCanAttack" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,20 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest.playerCanAttack" />
+        <item itemvalue="JUnit.GameTest.canQuest" />
         <item itemvalue="JUnit.All in FantasyAdventureHW" />
         <item itemvalue="JUnit.PlayerTest.playerHasCharacterClass" />
         <item itemvalue="JUnit.GameTest.canGenerateRoomsBasedOnPlayersAndDifficulty" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.GameTest.difficultyChangesContentsOfRoom" />
       </list>
     </recent_temporary>
   </component>
@@ -195,22 +195,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="107" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1575046088200" />
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575065137444">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575067414587">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575065137444" />
-    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575065137442">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575067414587" />
+    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575067414585">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575065137442" />
-    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575065137442">
+    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575067414585" />
+    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575067414584">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575065137442" />
-    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575065137443">
+    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575067414584" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575067414586">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575065137443" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575067414586" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1575022923135">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

@@ -94,4 +94,11 @@ public class GameTest {
         assertEquals(6, game.getRooms().get(0).getMonsters().size());
         assertEquals(6, game.getRooms().get(0).getTreasure().size());
     }
+
+    @Test
+    public void canQuest() {
+        game.generateRooms();
+        game.quest();
+        assertEquals(0, game.getRooms().get(0).getMonsters().size());
+    }
 }

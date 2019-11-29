@@ -1,6 +1,7 @@
 package game.players;
 
 import game.players.characterclasses.CharacterClass;
+import game.rooms.enemies.Monster;
 
 public class Player {
 
@@ -34,6 +35,11 @@ public class Player {
 
     public CharacterClass getCharacterClass() {
         return characterClass;
+    }
+
+
+    public String attack(Monster monster){
+        return "Attack!";
     }
 
     public void heal(int healingFactor) {
