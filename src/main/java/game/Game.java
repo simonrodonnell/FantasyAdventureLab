@@ -62,7 +62,7 @@ public class Game {
         return new Monster(randomMonsterType);
     }
 
-    private TreasureTypes randomTreasure() {
+    public TreasureTypes randomTreasure() {
         TreasureTypes[] treasureArray = TreasureTypes.values();
         Random random = new Random();
         int index = random.nextInt(treasureArray.length);
@@ -141,12 +141,13 @@ public class Game {
         }
     }
 
-    private void fight(ArrayList<Player> players, Monster monster) {
+    public void fight(ArrayList<Player> players, Monster monster) {
         int playerIndex = 0;
         while(playerIndex < players.size()){
             Player player = players.get(playerIndex);
-            player.getCharacterClass();
+            String result = player.getCharacterClass().attack(monster);
             playerIndex ++;
+            System.out.println(result);
         }
     }
 

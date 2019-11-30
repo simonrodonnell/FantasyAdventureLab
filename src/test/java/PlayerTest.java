@@ -8,7 +8,6 @@ import game.rooms.enemies.MonsterTypes;
 import org.junit.Before;
 import org.junit.Test;
 
-import static game.rooms.enemies.MonsterTypes.GOBLIN;
 import static org.junit.Assert.assertEquals;
 
 public class PlayerTest {
@@ -35,7 +34,7 @@ public class PlayerTest {
     @Test
     public void playerCanAttack(){
         Monster monster = new Monster(MonsterTypes.GOBLIN);
-        assertEquals("Attack!", player.attack(monster));
+        assertEquals("You hit the Goblin!", player.getCharacterClass().attack(monster));
     }
 
     @Test

@@ -101,4 +101,13 @@ public class GameTest {
         game.quest();
         assertEquals(0, game.getRooms().get(0).getMonsters().size());
     }
+
+    @Test
+    public void canFight(){
+        ArrayList<Player> players = game.getPlayers();
+        players.add(player);
+        Monster monster1 = new Monster(MonsterTypes.GOBLIN);
+
+        game.fight(players, monster1);
+    }
 }

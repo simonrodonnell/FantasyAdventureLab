@@ -5,15 +5,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/CharacterClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/players/characterclasses/CharacterClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Game.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FantasyAdventureHW" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,11 +71,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.canGenerateRoomsBasedOnPlayersAndDifficulty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.canFight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventureHW" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="canGenerateRoomsBasedOnPlayersAndDifficulty" />
+      <option name="METHOD_NAME" value="canFight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,10 +114,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PlayerTest.playerCanAttack" />
+        <item itemvalue="JUnit.GameTest.canFight" />
         <item itemvalue="JUnit.GameTest.canQuest" />
         <item itemvalue="JUnit.All in FantasyAdventureHW" />
         <item itemvalue="JUnit.PlayerTest.playerHasCharacterClass" />
-        <item itemvalue="JUnit.GameTest.canGenerateRoomsBasedOnPlayersAndDifficulty" />
       </list>
     </recent_temporary>
   </component>
@@ -195,26 +197,26 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="107" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1575046088200" />
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575067414587">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1575113781822">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575067414587" />
-    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575067414585">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1575113781822" />
+    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1575113781821">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575067414585" />
-    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575067414584">
+    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1575113781821" />
+    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1575113781820">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575067414584" />
-    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575067414586">
+    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1575113781820" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1575113781821">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575067414586" />
-    <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1575022923135">
+    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1575113781821" />
+    <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1575111162757">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1575022923135" />
+    <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1575111162757" />
     <state x="428" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575046041630">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

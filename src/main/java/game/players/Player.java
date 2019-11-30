@@ -37,11 +37,6 @@ public class Player {
         return characterClass;
     }
 
-
-    public String attack(Monster monster){
-        return "Attack!";
-    }
-
     public void heal(int healingFactor) {
         this.hitPoints += healingFactor;
         if(hitPoints > maxHitPoints){
